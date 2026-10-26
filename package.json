@@ -1,0 +1,30 @@
+{
+  "name": "prism-ascii-banner",
+  "version": "1.0.0",
+  "description": "ASCII and Unicode block-letter banner generator with 7 styles, comment/box/console.log wrappers and PNG export.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "ascii-art",
+    "figlet",
+    "banner",
+    "cli",
+    "terminal",
+    "readme",
+    "text-art",
+    "vibe-coding",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-ascii-banner.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-ascii-banner/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

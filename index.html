@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prism ASCII Banner · Prism Protocol</title>
+  <meta name="description" content="ASCII and Unicode block-letter banner generator with 7 styles, comment/box/console.log wrappers and PNG export." />
+  <meta name="theme-color" content="#07080f" />
+  <meta property="og:title" content="Prism ASCII Banner · Prism Protocol" />
+  <meta property="og:description" content="ASCII and Unicode block-letter banner generator with 7 styles, comment/box/console.log wrappers and PNG export." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <style>:root{--accent:#3EE69A;--accent-2:#00D2FF}</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="mark">◇</span><b>PRISM</b><span>ASCII Banner</span></a>
+    <nav>
+      <a class="btn small" href="https://github.com/krishyaa06/prism-ascii-banner" target="_blank" rel="noreferrer">★ GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">🔤 Vibe Coding</p>
+      <h1>Big text for <em>terminals & READMEs.</em></h1>
+      <p class="lead">Generate ASCII and block-letter banners for CLI splash screens, code comments and README headers. Wrap them as comments, boxes or console.log, or export a PNG.</p>
+    </section>
+    <section class="card">
+      <div class="card-title"><h2>Text</h2><span class="pill" id="dim"></span></div>
+      <textarea id="txt" class="code" rows="2" spellcheck="false" aria-label="Banner text">PRISM</textarea>
+      <div class="row opts">
+        <div class="field"><span>Style</span><div class="chips" id="styles"></div></div>
+        <label class="field"><span>Letter spacing</span><input type="range" id="sp" min="0" max="3" value="1" /></label>
+        <label class="field"><span>Wrap as</span><select id="wrap"><option value="none">Plain</option><option value="box">Box</option><option value="slash">// comments</option><option value="hash"># comments</option><option value="block">/* block */</option><option value="html">HTML comment</option><option value="md">Markdown code</option><option value="js">console.log()</option></select></label>
+        <label class="field"><span>Colour</span><select id="color"><option value="grad">Gradient</option><option value="mono">Mono</option><option value="green">Terminal green</option></select></label>
+      </div>
+    </section>
+    <section class="card art-card">
+      <div class="card-title"><h2>Banner</h2><div class="row"><button class="btn small primary" id="copy">Copy</button><button class="btn small" id="dl">.txt</button><button class="btn small" id="png">PNG</button></div></div>
+      <div class="art-wrap"><pre class="art grad" id="art"></pre></div>
+      <p class="muted warn" id="warn" hidden></p>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <span>◇ Prism ASCII Banner · Part of <a href="https://dc.gg/prismprotocol" target="_blank" rel="noreferrer">Prism Protocol</a></span>
+    <span><a href="https://github.com/krishyaa06/prism-ascii-banner" target="_blank" rel="noreferrer">Source</a> · MIT License · Runs 100% in your browser</span>
+  </footer>
+  <script src="js/prism.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

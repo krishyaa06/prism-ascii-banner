@@ -1,0 +1,15 @@
+    <section class="card">
+      <div class="card-title"><h2>Text</h2><span class="pill" id="dim"></span></div>
+      <textarea id="txt" class="code" rows="2" spellcheck="false" aria-label="Banner text">PRISM</textarea>
+      <div class="row opts">
+        <div class="field"><span>Style</span><div class="chips" id="styles"></div></div>
+        <label class="field"><span>Letter spacing</span><input type="range" id="sp" min="0" max="3" value="1" /></label>
+        <label class="field"><span>Wrap as</span><select id="wrap"><option value="none">Plain</option><option value="box">Box</option><option value="slash">// comments</option><option value="hash"># comments</option><option value="block">/* block */</option><option value="html">HTML comment</option><option value="md">Markdown code</option><option value="js">console.log()</option></select></label>
+        <label class="field"><span>Colour</span><select id="color"><option value="grad">Gradient</option><option value="mono">Mono</option><option value="green">Terminal green</option></select></label>
+      </div>
+    </section>
+    <section class="card art-card">
+      <div class="card-title"><h2>Banner</h2><div class="row"><button class="btn small primary" id="copy">Copy</button><button class="btn small" id="dl">.txt</button><button class="btn small" id="png">PNG</button></div></div>
+      <div class="art-wrap"><pre class="art grad" id="art"></pre></div>
+      <p class="muted warn" id="warn" hidden></p>
+    </section>

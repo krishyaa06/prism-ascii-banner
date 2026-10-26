@@ -1,0 +1,9 @@
+#txt{min-height:0;font-size:18px}
+.opts{gap:18px;align-items:flex-end;margin-top:14px}.opts .field{margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chips button{font:12px var(--mono);padding:6px 11px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}.chips button.on{background:var(--accent);border-color:var(--accent);color:#061016;font-weight:600}
+.art-card{margin-top:16px}
+.art-wrap{overflow:auto;padding:22px;border-radius:12px;background:#05070f;border:1px solid var(--line)}
+.art{margin:0;font:14px/1.15 var(--mono);white-space:pre;width:max-content}
+.art.grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.art.mono{color:var(--text)}.art.green{color:#3ee69a;text-shadow:0 0 8px #3ee69a66}
+.warn{font-size:13px;margin-top:8px}
